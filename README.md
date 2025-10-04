@@ -70,21 +70,22 @@ The generated PNGs are used in an Electron-built application that offers a web i
 ## Requirements and Installation
 
 1. Clone this repository:  
-   bash
+   ```bash
    git clone https://github.com/Upitor87/Dream-city
+   ```
    
 2. Create and activate a Python virtual environment:  
-   bash
+   ```bash
    python3 -m venv env && source env/bin/activate
-   
+   ```
 3. Install dependencies:  
-   bash
+   ```bash
    pip install -r requirements.txt
-   
+   ```
 4. Run the PyQt application for initial TIFF layer processing and visualization:  
-   bash
+   ```bash
    python "dream city gamma.py"
-   
+   ```
 5. Deploy the Electron application for final visualization and municipal information consultation.
 
 ## Using the Electron Application  
