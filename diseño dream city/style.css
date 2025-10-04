@@ -1,0 +1,86 @@
+/* Fondo celeste para toda la página */
+html, body {
+   background-color: #87CEEB; /* celeste */
+   margin: 0;  /* quitar márgenes por defecto del navegador */
+   height: 100%;
+}
+
+/* Contenedor principal que agrupa los paneles horizontalmente */
+#container {
+  display: flex;       /* Flexbox horizontal */
+  height: 100vh;       /* altura completa de la ventana */
+  gap: 3px;            /* espacio entre paneles (para línea roja) */
+}
+
+/* Clase común para todos los paneles */
+.panel {
+  flex: 1;                      /* todos los paneles ocupan el mismo espacio */
+  box-sizing: border-box;       /* incluye borde en el tamaño total */
+  cursor: pointer;              /* cursor al pasar por encima */
+  display: flex;                /* para organizar contenido interno */
+  border: 2px solid red;        /* línea roja alrededor de cada panel */
+  border-radius: 5px;           /* bordes ligeramente redondeados */
+}
+
+/* Panel específico del mapa */
+#mapPanel {
+  height: 100%;
+}
+
+/* Contenedor de información (parámetros y legislación) */
+#infoPanel {
+  display: flex;                 /* flexbox interno */
+  flex-direction: column;        /* organiza los subpaneles de arriba a abajo */
+  gap: 3px;                      /* línea roja entre subpaneles */
+}
+
+/* Subpaneles internos (parámetros y leyes) */
+.subpanel {
+  flex: 1;                        /* todos los subpaneles ocupan misma altura */
+  display: flex;                  /* para organizar contenido interno */
+  flex-direction: column;         /* organiza contenido en columna */
+  align-items: flex-start;        /* alinea contenido a la izquierda */
+  justify-content: flex-start;    /* coloca contenido desde arriba */
+  padding: 10px;                  /* espacio interno */
+  border: 2px solid red;          /* línea roja entre subpaneles */
+  border-radius: 5px;             /* bordes ligeramente redondeados */
+  background: #f0f8ff;            /* fondo azul muy claro para subpaneles */
+}
+
+/* Botón "Volver" */
+#backButton {
+  position: absolute;  
+  top: 10px;           
+  left: 10px;          
+  padding: 8px 12px;   
+  font-size: 14px;     
+  display: none;       
+  z-index: 1000;       
+  cursor: pointer;     
+  background: white;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+/* Etiquetas de formulario */
+label {
+  margin-top: 10px;     
+  font-weight: bold;    
+}
+
+/* Selects (desplegables) */
+select {
+  width: 90%;           
+  padding: 5px;         
+  margin-top: 5px;      
+}
+
+/* Contenedor donde se muestran las leyes */
+#lawContent {
+  margin-top: 15px;        
+  padding: 10px;           
+  border: 1px solid #888;  
+  width: 100%;             
+  min-height: 70px;        
+  background: #f8f8f8;     
+}
